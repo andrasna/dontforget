@@ -16,6 +16,10 @@ Run the app:
 
 `npm run dev`
 
+Open in your browser:
+
+http://localhost:3000/
+
 ## Todo
 
 - Make the app ready for deployment
