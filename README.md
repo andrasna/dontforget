@@ -1,6 +1,6 @@
 # Don't Forget
 
-Rather bare-bone CRUD application with Express.js, MongoDB and Vanilla JavaScript.
+Rather bare-bone CRUD application with Express.js, MongoDB and vanilla JavaScript on the client side.
 
 ![Screenshot](screenshot.png)
 
