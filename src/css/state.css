@@ -1,0 +1,8 @@
+.is-active {
+  &.todo-updater,
+  &.overlay {
+    visibility: visible;
+    transition: opacity .1s linear;
+    opacity: 1;
+  }
+}

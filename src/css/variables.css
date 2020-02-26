@@ -1,0 +1,40 @@
+:root {
+  /* Color */
+  --c-0: rgba(0, 0, 0, .8);
+  --c-1: rgba(255, 255, 255, .8);
+  --c-2: #fff;
+  --c-3: #f2e8c9;
+
+  /* Background color */
+  --bgc-0: linear-gradient(to left, #975efd, #14ac63);
+  --bgc-1: rgba(0, 0, 0, .6);
+  --bgc-2: rgba(0, 0, 0, .2);
+  --bgc-4: #14ac63;
+  --bgc-5: #00d06c;
+
+  /* Font family */
+  --ff-0: 'Montserrat', sans-serif;
+  --ff-1: 'Playfair Display', serif;
+
+  /* Font size */
+  --fs-0: 1rem;
+  --fs-1: 1.1rem;
+  --fs-2: 2.5rem;
+  --fs-3: 3.5rem;
+  --fs-4: 5rem;
+
+  /* Text shadow */
+  --tsh-0: 2px 2px 0 rgba(0, 0, 0, .2), 0 2.8rem 0 rgba(0, 0, 0, .1);
+  --tsh-1: 2px 2px 0 rgba(0, 0, 0, .2), 0 1.8rem 0 rgba(0, 0, 0, .1);
+  --tsh-2: 2px 2px 0 rgba(0, 0, 0, .2), 0 1.3rem 0 rgba(0, 0, 0, .1);
+
+  /* Box shadow */
+  --bxsh-0: 0 2px 0 rgba(0, 0, 0, .2);
+  --bxsh-1: 0 6px 0 rgba(0, 0, 0, .2);
+
+  /* Z-index */
+  --z-1: 1;
+
+  /* Border radius */
+  --bdrs-0: .3rem;
+}

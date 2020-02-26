@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Don't forget list">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Don't forget list</title>
+  <% if (isDevMode === false) { %>
+  <link rel="stylesheet" href="index.css">
+  <% } %>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Playfair+Display:900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="overlay"></div>
+
+  <div class="wrapper">
+    <h1 class="title-main">Don't forget</h1>
+
+    <ul class="todo-list">
+      <% items.forEach((item) => { %>
+        <%- include('partials/todo-item', { item }) %>
+      <% }) %>
+    </ul>
+
+    <form class="todo-creator" method="post" action="/">
+      <input class="todo-input" name="input" type="text" placeholder="Write new..." aria-label="Input for new Todo" autocomplete="off" autofocus>
+      <input class="visuallyhidden" type="submit" value="Add" aria-label="Add new Todo">
+    </form>
+  </div> 
+
+  <script src="index.js"></script>
+</body>
+</html>

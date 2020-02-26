@@ -1,0 +1,185 @@
+/* Overlay */
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: var(--z-1);
+  width: 100%;
+  height: 100%;
+  background: var(--bgc-1);
+  opacity: 0;
+  visibility: hidden;
+  transition: visibility .1s ease, opacity .1s ease;
+}
+
+/* Title */
+
+.title-main {
+  position: relative;
+  color: var(--c-3);
+  font-size: var(--fs-2);
+  font-family: var(--ff-1);
+  text-shadow: var(--tsh-2);
+  font-weight: 900;
+  margin: 0;
+  text-align: center;
+
+  @media screen and (min-width: 30rem) {
+    font-size: var(--fs-3);
+    text-shadow: var(--tsh-1);
+  }
+
+  @media screen and (min-width: 40rem) {
+    font-size: var(--fs-4);
+    text-shadow: var(--tsh-0);
+  }
+}
+
+/* Todo */
+
+.todo-list {
+  padding: 0;
+  list-style: none;
+}
+
+.todo {
+  display: grid;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 0;
+  background: var(--c-3);
+  box-shadow: var(--bxsh-0);
+  line-height: 1.5;
+  border-radius: var(--bdrs-0);
+  position: relative;
+  outline: none;
+
+  &:focus {
+    box-shadow: var(--bxsh-1);
+  }
+}
+
+.todo-description {
+  font-size: var(--fs-0);
+  font-weight: normal;
+  margin: 0;
+  padding: .6rem .8rem;
+  position: relative;
+  grid-column-start: 1;
+  grid-column-end: span 2;
+  grid-row-start: 1;
+}
+
+.todo-controls {
+  display: flex;
+  align-items: center;
+  margin: 0 .5rem;
+  grid-column-start: end;
+  grid-column-end: end;
+  grid-row-start: 1;
+  position: relative;
+}
+
+.todo-action {
+  padding: 0;
+  margin-left: .3rem;
+  line-height: 1;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.todo-icon {
+  opacity: 0;
+  transition: opacity .1s;
+  width: .85rem;
+  padding: .4rem;
+  pointer-events: none;
+
+  @nest
+  .todo:hover & {
+    transition: opacity .2s;
+    opacity: .5;
+  }
+
+  @nest
+  .todo:hover & {
+    transition: opacity .2s;
+    opacity: .5;
+  }
+
+  @nest
+  .todo:active &,
+  .todo:focus & {
+    opacity: .5;
+  }
+
+  @nest
+  .todo-action:active &,
+  .todo-action:hover &,
+  .todo-action:focus & {
+    opacity: 1;
+    transition: opacity .2s;
+  }
+}
+
+.todo-action:focus {
+  outline: none;
+}
+
+/* Todo add new form */
+
+.todo-creator {
+  display: flex;
+  align-items: center;
+}
+
+.todo-input {
+  flex-basis: 100%;
+  padding: .7rem;
+  background: transparent;
+  text-align: center;
+  color: var(--c-2);
+}
+
+/* Todo edit form */
+
+.todo-updater {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: all;
+}
+
+.todo-editor {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: opacity .1s ease;
+  z-index: var(--z-1);
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+  padding: .6rem .8rem;
+}
+
+.todo-submit {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  margin-top: .5rem;
+  background: var(--bgc-4);
+  color: var(--c-2);
+  font-size: var(--fs-0);
+  padding: .2rem 1rem;
+  z-index: var(--z-1);
+  cursor: pointer;
+  transition: background .2s linear;
+
+  &:hover,
+  &:active,
+  &:focus {
+    transition: background .2s linear;
+    background: var(--bgc-5);
+  }
+}

@@ -1,0 +1,15 @@
+<li class="todo" data-id="<%= item._id %>" tabindex="0">
+  <div>
+    <h2 class="todo-description"><%= item.description %></h2>
+
+    <form class="todo-updater">
+      <textarea class="todo-editor"><%= item.description %></textarea>
+      <input class="todo-submit" type="submit" value="Save">
+    </form>
+  </div>
+
+  <div class="todo-controls">
+    <button class="todo-action todo-edit" title="Edit button"><%- include('svg/pen') %></button>
+    <button class="todo-action todo-delete" title="Delete button"><%- include('svg/trash') %></button>
+  </div>
+</li>
