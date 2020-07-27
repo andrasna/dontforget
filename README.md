@@ -19,8 +19,3 @@ Run the app:
 Open in your browser:
 
 http://localhost:3000/
-
-## Todo
-
-- Make the app ready for deployment
-- Deploy the app (probably to Heroku)
