@@ -2,8 +2,6 @@
 
 Bare-bone CRUD application with Express.js, MongoDB and vanilla JavaScript.
 
-![Screenshot](screenshot.png)
-
 ## Running the app
 
 Make sure you have MongoDB and Node.js installed.
